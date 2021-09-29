@@ -1,0 +1,82 @@
+.author{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0rem 4rem;
+    @include large-breakpoint{
+        flex-direction: column;
+    }
+
+    &__thumbnail {
+        text-align: center;
+        img{
+            border-radius: 50%;
+            width: 200px;
+        }
+        padding:2rem;
+        
+        @include large-breakpoint{
+            img{
+                width: 166px;
+            }
+        }
+    }
+    
+    &__list {
+        padding:2rem;
+    
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        @include large-breakpoint{
+            padding:0px;
+            text-align: center;
+        }
+    
+    }
+
+    &__name {
+        padding:0px;
+        font-style: italic;
+        font-weight: 900;
+        white-space: nowrap;
+    
+        @include large-breakpoint{
+            text-align: center;
+        }
+    
+    }
+    
+    &__link {
+        text-decoration: none;
+        color:$spanish-pink;
+        &:hover{
+            color:$nickel;
+        }
+    
+        &:active{
+            color:$platinum;
+        }
+    }
+
+
+    &__description{
+        padding:2rem;
+        @include large-breakpoint{
+            display: none;
+        }
+
+        p{
+            font-weight: 300;
+            line-height: 2;
+        }
+
+    }   
+
+
+}
+
+
+

@@ -1,0 +1,51 @@
+.content{
+    padding:1rem 4rem;
+    color:$nickel;
+
+    &__date{
+        font-weight: $f-light;
+        padding-bottom:2rem;
+        padding-top:2rem;
+
+    }
+    &__text{
+
+        & p {
+
+            font-size:$x-small;
+            font-weight: $f-light;
+            line-height: 2rem;
+            padding-bottom:2rem;
+            & a {
+                text-decoration: none;
+                color:$red;
+            }
+    
+        }
+
+        &--hiddeable{
+        }
+        @include large-breakpoint{
+            &--hiddeable{
+                display:  none; 
+            }
+        }
+
+    }
+
+    &__buttons{
+
+    }
+
+    @include large-breakpoint{
+        &__buttons{
+            padding:0rem 5rem;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+
+}

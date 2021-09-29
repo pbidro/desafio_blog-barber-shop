@@ -1,0 +1,21 @@
+.header{
+    background: url(/assets/images/post-image.jpg) no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    color:$white;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction:column;
+    &__slogan{
+        padding-top:10vh;
+        font-style: italic;
+        font-size:$xx-large;
+        font-weight: $f-black;
+        text-align: center;
+    }
+
+    &__icon{
+    }
+}
+

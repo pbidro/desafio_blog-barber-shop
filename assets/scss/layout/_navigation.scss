@@ -1,0 +1,60 @@
+.navigation {
+    background-color:$black;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+
+    &__logo{
+        width:100px;
+        padding:1rem 5rem;
+    }
+    
+    &__toggler{
+        display: none;
+
+
+    }
+    
+    &__list{
+        list-style: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding:0rem 7rem;
+
+    }
+    
+    &__item{
+        text-decoration: none;
+        color: $white;
+        margin: 0.5rem;
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: $white;
+        margin: 0.5rem;
+
+       &:hover{
+           color:$red;
+       } 
+    }
+
+    @include large-breakpoint{
+        &__list {
+            display: none;
+
+        }
+
+        &__toggler{
+            display:block;
+            color:$white;
+            padding:1rem 4rem;
+        }
+    }
+
+      
+}
+

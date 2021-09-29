@@ -1,0 +1,11 @@
+.btn{
+    background-color:gray;
+    border-color: rgb(119, 117, 117);
+    border-radius:25px;
+    margin-right:1rem;
+    white-space: nowrap;
+    &:hover{
+        background-color:rgb(119, 117, 117);
+        border-color: rgb(119, 117, 117);
+    }
+}

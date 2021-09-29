@@ -1,0 +1,50 @@
+.pagination{
+    margin-top:2px;
+    background-color: $platinum;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+    a:focus{
+        color:$white !important;
+        background-color: $black;
+        box-shadow: none !important;
+        border-color: transparent !important;
+    }
+
+    &__interface{
+        display: flex;
+        justify-content: center;
+        a {color:$black;}
+    
+    }
+
+    &__previous{
+        border-top-left-radius: 15.25rem !important;
+        border-bottom-left-radius: 15.25rem !important;
+        color:$nickel  !important;
+        &--hover:hover{
+            color:$white !important;
+            background-color: $black;
+    
+        }
+    }
+
+    &__number{
+
+        &--hover:hover{
+            color:$white !important;
+            background-color: $black;
+        }
+    
+    }
+
+    &__next{
+        border-top-right-radius: 15.25rem !important;
+        border-bottom-right-radius: 15.25rem !important;
+        &--hover:hover{
+            color:$white !important;
+            background-color: $black;
+        }
+    }
+
+}
